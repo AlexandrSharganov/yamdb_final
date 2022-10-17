@@ -1,7 +1,7 @@
-from django.utils import timezone as tz
-from django.core.exceptions import ValidationError
-
 from re import match
+
+from django.core.exceptions import ValidationError
+from django.utils import timezone as tz
 
 from api_yamdb.settings import ALLOWED_SYMBOLS
 

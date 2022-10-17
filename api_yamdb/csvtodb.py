@@ -1,8 +1,7 @@
 import csv
+import datetime
 import sqlite3
 from pathlib import Path
-import datetime
-
 
 path_to_db = Path('db.sqlite3')
 conn = sqlite3.connect(path_to_db)

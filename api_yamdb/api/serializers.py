@@ -2,12 +2,13 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 from rest_framework import serializers
 from rest_framework.relations import SlugRelatedField
 from rest_framework.validators import UniqueTogetherValidator
-
-from .utils import CurrentTitleDefault
-from api_yamdb.settings import (CONFIRMATION_CODE_LENGTH, EMAIL_MAX_LENGTH,
-                                USERNAME_MAX_LENGTH)
 from reviews.models import Categories, Comment, Genres, Review, Title, User
 from reviews.utils import validate_date_not_in_future, validate_username
+
+from api_yamdb.settings import (CONFIRMATION_CODE_LENGTH, EMAIL_MAX_LENGTH,
+                                USERNAME_MAX_LENGTH)
+
+from .utils import CurrentTitleDefault
 
 
 class TokenSerializer(serializers.Serializer):

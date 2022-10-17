@@ -9,7 +9,9 @@ from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
+from reviews.models import Categories, Genres, Review, Title, User
 
+from api_yamdb.settings import CONFIRMATION_CODE_LENGTH
 
 from .filters import GenreFilter
 from .paginations import GenresAndCategoriesPagination, TitlesPagination
@@ -19,8 +21,6 @@ from .serializers import (CategorySerializer, CommentSerializer,
                           TitlePostSerializer, TitleSerializer,
                           TokenSerializer, UserSerializer)
 from .utils import send_verification_mail
-from api_yamdb.settings import CONFIRMATION_CODE_LENGTH
-from reviews.models import Categories, Genres, Review, Title, User
 
 
 class OnlyNameSlugViewSet(mixins.ListModelMixin,
