@@ -60,6 +60,7 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
+        SECRET_KEY: ${{ secrets.SECRET_KEY }}
         script: |
           sudo docker pull alexandrsharganov/api_yamdb
           #остановка всех контейнеров
