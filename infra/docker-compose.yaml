@@ -8,6 +8,7 @@ services:
       - ./.env
   web:
     image: alexandrsharganov/api_yamdb
+    # build: ../api_yamdb
     restart: always
     volumes:
       - static_value:/app/static/
