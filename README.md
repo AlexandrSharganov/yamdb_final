@@ -58,4 +58,4 @@ docker-compose stop
 - [Александр Шарганов](https://github.com/AlexandrSharganov)
 
 
-https://github.com/AlexandrSharganov/yamdb_final/actions/workflows/yamdb_workflows/badge.svg
+![workflow_status](https://github.com/AlexandrSharganov/yamdb_final/actions/workflows/yamdb_workflows/badge.svg)
