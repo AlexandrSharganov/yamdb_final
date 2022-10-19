@@ -56,6 +56,4 @@ docker-compose stop
 ---
 ## Разработчик:
 - [Александр Шарганов](https://github.com/AlexandrSharganov)
-
-
-![workflow_status](https://github.com/alexandrsharganov/yamdb_final/actions/workflows/yamdb_workflows/badge.svg)
+https://github.com/AlexandrSharganov/yamdb_final/actions/workflows/yamdb_workflows/badge.svg
